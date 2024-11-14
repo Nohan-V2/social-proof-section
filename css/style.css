@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: "League Spartan", sans-serif;
+}
+
+:root {
+    --accent-color: rgba(81, 32, 81, 1);
+    --body: rgba(255, 255, 255, 1);
+    --verify-user: rgba(238, 105, 164, 1);
+    --rating: rgba(247, 242, 247, 1);
+    --second-color: rgba(146, 123, 145, 1);
+}
+
+body {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--body);
+}
+
+.object {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+}
+
+main {
+    width: 80%;
+}
+
+.presentation {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 224px;
+    margin-bottom: 72px;
+
+    .text-presentation {
+        width: 50%;
+
+        h1 {
+            color: var(--accent-color);
+            font-weight: bold;
+            font-size: 56px;
+            line-height: 48px;
+            letter-spacing: -2px;
+            margin: 0px;
+            margin-bottom: 16px;
+        }
+
+        p {
+            font-weight: 400px;
+            font-size: 20px;
+            line-height: 25px;
+            letter-spacing: -0.63px;
+            color: var(--second-color);
+        }
+    }
+}
+
+.rating {
+    width: 50%;
+    list-style: none;
+    gap: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+li {
+    border-radius: 8px;
+    background-color: var(--rating);
+    padding: 20px 80px 20px 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    text-align: center;
+
+    img {
+        width: 116px;
+        object-fit: cover;
+        margin-right: 32px;
+    }
+
+    p {
+        font-weight: bold;
+        font-size: 16px;
+        line-height: auto;
+        letter-spacing: 0px;
+        color: var(--accent-color);
+    }
+}
+
+.users-and-comment {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 32px;
+
+    .container-comment {
+        padding: 40px 32px;
+        border-radius: 8px;
+        background-color: var(--accent-color);
+        width: 33%;
+
+        .user-name {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-bottom: 32px;
+        }
+
+        img {
+            background-color: transparent;
+            margin-right: 24px;
+            width: 40px;
+            height: 40px;
+            border-radius: 100%;
+        }
+
+        .text-user-name h2 {
+            margin-bottom: 4px;
+            font-weight: bold;
+            font-size: 16px;
+            line-height: auto;
+            letter-spacing: 0px;
+            color: var(--body);
+        }
+
+        .text-user-name p {
+            font-weight: normal;
+            font-size: 16px;
+            line-height: auto;
+            letter-spacing: 0px;
+            color: var(--verify-user);
+        }
+
+        .comment-of-user p {
+            color: var(--body);
+            font-weight: 400px;
+            font-size: 16px;
+            line-height: 22px;
+            letter-spacing: -0.3px;
+        }
+    }
+}
